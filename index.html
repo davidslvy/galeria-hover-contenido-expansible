@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva: Explora tu Contenido con Efectos Hover</title>
+    <link rel="icon" href="favicon/apple-touch-icon.png">
+    <!-- CSS de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Otros CSS -->
+    <link rel="stylesheet" href="jquery.imageList.css" />
+</head>
+
+<body>
+
+    <!-- Contenido de la página -->
+    <div class="container">
+        <h1>Galería Interactiva: Explora tu Contenido con Efectos Hover</h1>
+        <div class="gallery-wrap" id="gallery-wrap">
+            <div class="item item-1">
+                <div class="content">
+                    <h2>Título de la Imagen 1</h2>
+                    <p>Descripción de la imagen 1...</p>
+                </div>
+            </div>
+            <div class="item item-2">
+                <div class="content">
+                    <h2>Título de la Imagen 2</h2>
+                    <p>Descripción de la imagen 2...</p>
+                </div>
+            </div>
+            <div class="item item-3">
+                <div class="content">
+                    <h2>Título de la Imagen 3</h2>
+                    <p>Descripción de la imagen 3...</p>
+                </div>
+            </div>
+            <div class="item item-4">
+                <div class="content">
+                    <h2>Título de la Imagen 4</h2>
+                    <p>Descripción de la imagen 4...</p>
+                </div>
+            </div>
+            <div class="item item-5">
+                <div class="content">
+                    <h2>Título de la Imagen 5</h2>
+                    <p>Descripción de la imagen 5...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="challenge">
+            <p>
+                <a href="https://www.jqueryscript-español.com/blog" target="_blank" style="color: orange">jqueryscript-español.com</a> 
+            </p>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Plugin de jQuery para la galería de imágenes -->
+    <script src="jquery.imageList.js"></script>
+    <!-- Configuración del plugin -->
+    <script>
+    $(document).ready(function() {
+        $('.gallery-wrap').imageGallery({
+            hoverEffect: 'scale', // Puedes elegir 'scale', 'fade', 'rotate', o 'slide'
+            transitionDuration: '0.5s', // Duración de la transición
+            itemFlex: '5', // Flexibilidad de las imágenes al hacer hover (aumenta la expansión)
+            imageUrls: [
+                "https://source.unsplash.com/random/800x600?sig=1",
+                "https://source.unsplash.com/random/800x600?sig=2",
+                "https://source.unsplash.com/random/800x600?sig=3",
+                "https://source.unsplash.com/random/800x600?sig=4",
+                "https://source.unsplash.com/random/800x600?sig=5"
+            ]
+        });
+    });
+    </script>
+</body>
+</html>
