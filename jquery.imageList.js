@@ -1,4 +1,3 @@
-/* Script de galería de imágenes desarrollado por Xysad */
 (function($) {
     $.fn.imageGallery = function(options) {
         var settings = $.extend({
